@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+   background-color: transparent;
+    text-align: center;
+    position: fixed;
+    top: 20px;
+    z-index: 1;
+}
+nav img{
+    position: absolute;
+    left: 0;
+    width: auto;
+    height: 10vh;
+}
+
+nav ul {
+    position: absolute;
+    left: 50%;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li {
+
+    margin-right: 10px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: orange;
+    font-family: impact;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    font-size: 25px;
+    
+}
+
+.search {
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.search input[type="text"] {
+    padding: 5px;
+    width: 200px;
+}
+
+.search button {
+    padding: 5px 10px;
+  
+}
+
+.entry-page {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: nelson;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes nelson  {
+    0% { background-image: url(./delicious-fried-chicken-plate.jpg); }
+    33% { background-image: url(./fruit-salad-spilling-floor-was-mess-vibrant-colors-textures-generative-ai.jpg); }
+    66% { background-image: url(./seafood-plate-with-shrimps-mussels-served-with-lemon.jpg); }
+    100% { background-image: url(./sour-curry-with-snakehead-fish-spicy-garden-hot-pot-thai-food.jpg); }
+}
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.card-1 ,.card-2,.card-3{
+    background-image: url(./top-view-table-full-delicious-food-composition.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+.card-2 {
+    background-image: url(./spicy-fried-tubtim-fish-salad-spicy-thai-food.jpg);
+  
+}
+.card-3 {
+    background-image: url(./spicy-fried-tubtim-fish-salad-spicy-thai-food.jpg);
+    
+}
+.card-1:hover,.card-2:hover,.card-3:hover {
+    opacity: 1;
+    
+}
+
+
+.buyNow {
+    position: fixed;
+    bottom: 50px;
+    width: 150px;
+    padding: 12px 24px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgb(255, 196, 3);
+    font-size: 16px;
+    font-family: impact;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+    border: solid orange 1px;
+}
+.buyNow:hover{
+    backdrop-filter: blur(10px);
+    border: none;
+}

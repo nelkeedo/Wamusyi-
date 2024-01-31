@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.page1{
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 15vh;
+    width: 100%;
+    height: auto;
+    display: grid;
+   grid-template-columns: repeat(4,1fr);
+   
+
+}
+.box{
+    padding-left: 50px;
+    padding-bottom: 30px;
+    display:flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  height: 75%;
+}
+img{
+    width: 300px;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  
+}
+.text{
+    display: block;
+    padding: 10px;
+}
+span{
+   margin-top: 10px;
+    font-family: impact;
+    font-size: 15px;
+}
+button{
+    position: relative;
+    top: 20px;
+    width: 150px;
+    padding: 12px 24px;
+    background-color: rgb(246, 162, 5);
+    color: rgb(10, 10, 10);
+    font-size: 16px;
+    font-family: impact;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 30px;
+    border: none;
+    box-shadow: 2px 5px 4px rgba(235, 171, 7 );
+    transition: box-shadow 0.3s ease;
+}
+#cart{
+    display:none;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.52);
+    position: absolute;
+    right: 0;
+  
+    width: 300px;
+    height: 500px;
+    font-family: impact;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+}
+#checkout{
+    position: relative;
+    top: 40vh;
+    left: 50%;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
